@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- <link rel="canonical" href="https://jasonxuyang.com"> -->
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5">
+        <meta name="format-detection" content="telephone=no">
+        <title>Bits of Good - Year in Review</title>
+        <!-- <meta name="description" content="Jason Yang is a product designer based in Atlanta, GA. He is currently stuyding Industrial Design at Georiga Tech"> -->
+        <meta property="og:type" content="website">
+        <!-- <meta property="og:url" content="jasonxuyang.com"> -->
+        <!-- <meta property="og:title" content="Jason Yang - Product Designer"> -->
+        <!-- <meta property="og:description" content="Jason Yang is a product designer based in Atlanta, GA. He is currently stuyding Industrial Design at Georiga Tech."> -->
+        <!-- <meta property="og:image" content="http://jasonxuyang.com/img/og-image.jpg"> -->
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+        <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+        <!-- <img src="img/og-image.jpg" id="og" alt="picture"/> -->
+        <link rel="stylesheet" href="flickity.css" media="screen">
+        
+        <style>
+            html {
+                -webkit-text-size-adjust: none;
+                -webkit-font-smoothing: subpixel-antialiased;
+                -webkit-font-smoothing: antialiased;
+                height: 100%;
+                overflow: visible;
+            }
+
+            a,body,button,div,footer,form,h1,h2,h3,h4,header,html,img,input,label,li,nav,p,select,span,table,textarea,ul {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font: inherit;
+                font-family: inherit;
+                font-size: 100%
+            }
+
+            body {
+                overflow-x: hidden;
+            }
+
+            @font-face {
+                font-family: 'VisbyCF-Extrabold';
+                font-style: normal;
+                src: local('VisbyCF-ExtraBold'), local('VisbyCF-ExtraBold'), local('VisbyCF-ExtraBold'),
+                    url('static/fonts/VisbyCF-ExtraBold.ttf') format('ttf'),
+                    url('static/fonts/VisbyCF-ExtraBold.woff') format('woff'),
+                    url('static/fonts/VisbyCF-ExtraBold.woff2') format('woff2');
+            }
+
+            @font-face {
+                font-family: 'VisbyCF-Normal';
+                font-style: normal;
+                src: local('VisbyCF-Bold'), local('VisbyCF-Bold'), local('VisbyCF-Bold'),
+                    url('static/fonts/VisbyCF-Normal.ttf') format('ttf'),
+                    url('static/fonts/VisbyCF-Normal.woff') format('woff'),
+                    url('static/fonts/VisbyCF-Normal.woff2') format('woff2');
+            }
+
+            @font-face {
+                font-family: 'Elephant-Italic';
+                font-style: normal;
+                src: local('Elephant')
+                    url('static/fonts/Elephant-Italic.ttf') format('ttf'),
+            }
+
+            h1, h2 {
+                font-family: 'VisbyCF-ExtraBold';
+            }
+
+            p {
+                font-family: 'VisbyCF-Normal';
+            }
+
+            .sticky {
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+            }
+
+            #hero h1 {
+                -webkit-text-stroke: .25vw #FD8033;
+                color: transparent;
+            }
+
+            #hero .hero {
+                font-size: 13.5vw;
+                line-height: 13.5vw;
+                margin-top: -2.5vw;
+            }
+
+            #hero .hero_container {
+                position: relative;
+                background: #FFBE4D;
+                height: 100vh;
+                width: 100vw;
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
+
+            #hero .filled {
+                color: #FE5854;
+                -webkit-text-stroke: .25vw #FE5854;
+            }
+
+            #hero .hero_content {
+                position: absolute;
+                bottom: 5vw;
+                right: 5vw;
+            }
+
+            #hero .hero_logo {
+                display: block;
+                width: 36.970vw;
+                height: 8.053vw;
+            }
+
+            #hero h2 {
+                font-size: 5vw;
+                color: #FFFFFF;
+                float: right;
+            }
+
+            #about .about_container {
+                position: relative;
+                background: #EF5266;
+                height: 100vh;
+                width: 100vw;
+            }
+
+            #about h2 {
+                position: absolute;
+                top: 15vw;
+                right: 6vw;
+                font-size: 4.5vw;
+                color: #FFBE4D;
+                width: 60vw;
+            }
+
+            #about .about_illo {
+                position: absolute;
+                bottom: 0;
+                left: 8vw;
+            }
+
+            #stats {
+                position: relative;
+                height: 100vh;
+                width: 100vw;
+                background: #2D285C;
+            }
+
+            #stats h1 {
+                display: block;
+                font-size: 4.5vw;
+                color: #FFBE4C;
+                filter: drop-shadow(0 .4vw 0 #2D285C);
+                text-align: center;
+            }
+
+            #stats h2 {
+                display: block;
+                font-size: 2vw;
+                color: #FFBE4C;
+                filter: drop-shadow(0 .2vw 0 #2D285C);
+                text-align: center;
+            }
+
+            #stats .stats_container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 80vw;
+            }
+
+            #stats .window_container {
+                position: relative;
+                width: 17.5vw;
+                height: auto;
+            }
+
+            #stats .window {
+                width: 17.5vw;
+            }
+            
+            #stats .window_content {
+                position: absolute;
+                top: 7.5vw;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            #community {
+            
+            }
+
+            .community_one h2 {
+                font-size: 3vw;
+                color: #FFFFFF;
+                text-align: center;
+                margin-bottom: -2vw;
+            }
+
+            #community .continue_text {
+                position: absolute;
+                bottom: 3vw;
+                right: 3vw;
+                width: 16vw;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #community .continue_text p {
+                color: #2D285C;
+                margin-top: .2vw;
+                margin-left: .5vw;
+                font-size: 1vw;
+            }
+
+            #community .arrow {
+                width: 2vw;
+            }
+
+            .scroll_container {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100vw;
+                height: 100vh;
+                background: #FFBE4D;
+            }
+
+            #community .community_one{
+                position: relative;
+                height: 100vh;
+                width: 100vw;
+                background: #FFBE4D;
+                margin: 0;
+            }
+
+            .community_one .title {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+            }
+
+            .community_one .photos {
+                position: absolute;
+                height: 12vw;
+                margin-top: -18vw;
+                width: 80vw;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .community_one .hero{
+                width: 80vw;
+                height: auto;
+            }
+
+            .community_one .bg_img {
+                position: absolute;
+                filter: drop-shadow(-.5vw .5vw 0 rgba(132, 123, 215, 0.85));
+            }
+
+            .community_one .img_container {
+                position: relative;
+            }
+
+            .community_one .overlay {
+                position: absolute;
+                background: linear-gradient(90deg, #FE5854 0%, #FFBE4D 100%);
+                opacity: 0.4;
+            }
+
+            .community_one .one {
+                width: 18vw;
+                height: 12vw;
+                top: 4.3vw;
+                left: 0vw;
+                z-index: 0;
+            }
+
+            .community_one .two {
+                width: 16vw;
+                height: 12vw;
+                top: 0vw;
+                left: 25vw;
+                z-index: 0;
+            }
+
+            .community_one .three {
+                width: 15vw;
+                height: 12vw;
+                top: 22vw;
+                left: 15.6vw;
+                z-index: 0;
+            }
+
+            .community_one .four {
+                width: 16vw;
+                height: 12vw;
+                top: 16.6vw;
+                left: 41vw;
+                z-index: 0;
+            }
+
+            .community_one .five {
+                width: 17vw;
+                height: 13vw;
+                top: 0vw;
+                right: 0vw;
+                z-index: 0;
+            }
+
+            .community_one .six {
+                width: 11vw;
+                height: 15vw;
+                top: 19.2vw;
+                right: 3vw;
+                z-index: 0;
+            }
+
+            #community .community_two{
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                height: 100vh;
+                width: 100vw;
+                background: #FFBE4D;
+                margin: 0;
+                align-items: center;
+            }
+
+            .community_two .content {
+                width: 40vw;
+                margin-left: 8vw;
+                margin-right: 8vw;
+            }
+
+            .community_two .title {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                width: 36vw;
+                justify-content: space-between;
+                margin-bottom: 1vw;
+            }
+
+            .community_two .letter_block {
+                width: 6vw;
+                height: 6vw;
+            }
+
+            .community_two p {
+                font-size: 1.5vw;
+                color: #FFFFFF;
+                margin-bottom: 1vw;
+            }
+
+            .community_two h2 {
+                text-align: left;
+                font-size: 2vw;
+                color: #FFFFFF;
+                margin-bottom: 2vw;
+            }
+
+            .community_two .bullet {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin-bottom: 1vw;
+                width: 30vw;
+            }
+
+            .community_two .number {
+                display: inline-block;
+                font-family: 'VisbyCF-ExtraBold';
+                font-size: 1.5vw;
+                margin-right: 1vw;
+                color: #FD8033;
+                background: #FFFFFF;
+                width: 2vw;
+                height: 2vw;
+                text-align: center;
+                border-radius: 50%;
+            }
+
+            .community_two h3 {
+                display: inline;
+                font-family: 'VisbyCF-ExtraBold';
+                font-size: 1.5vw;
+                color: #FFFFFF;
+            }
+
+            .community_two .bullet_text {
+                display: inline-block;
+                width: 26vw;
+            }
+
+            .community_two .photos {
+                display: inline-block;
+                position: relative;
+                width: 32.5vw;
+                height: 33.7vw;
+            }
+
+            .community_two .one {
+                position: absolute;
+                width: 14.4vw;
+                height: 10.8vw;
+                top: 4.4vw;
+                left: 0vw;
+            }
+
+            .community_two .two {
+                position: absolute;
+                width: 11.6vw;
+                height: 15.5vw;
+                bottom: 0vw;
+                left: 2.8vw;
+            }
+
+            .community_two .three {
+                position: absolute;
+                width: 14.2vw;
+                height: 10.7vw;
+                top: 0vw;
+                right: 0.9vw;
+            }
+
+            .community_two .four {
+                position: absolute;
+                width: 15.4vw;
+                height: 11.5vw;
+                top: 13.5vw;
+                right: 0vw;
+            }
+
+            #community .community_three{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                height: 100vh;
+                width: 100vw;
+                background: #FFBE4D;
+                margin: 0;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .community_three .title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 2vw;
+            }
+            .community_three .hero{
+                width: 53.6vw;
+                margin-bottom: 3vw;
+            }
+
+            .community_three h3 {
+                font-family: 'VisbyCF-ExtraBold';
+                font-size: 1.5vw;
+                text-align: center;
+                color: #FFFFFF;
+                width: 42vw;
+            }
+
+            .community_three .bullets {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin-left: 8vw;
+                width: 60vw;
+            }
+
+            .community_three .bullet {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 1vw;
+            }
+
+            .community_three .number {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'VisbyCF-ExtraBold';
+                font-size: 1.2vw;
+                margin-right: 1.5vw;
+                color: #FFFFFF;
+                background: #FD8033;
+                width: 3vw;
+                height: 3vw;
+                text-align: center;
+                border-radius: 50%;
+            }
+
+            .community_three .bullet_text {
+                width: 26vw;
+            }
+
+            .community_three h3 {
+                display: inline;
+                font-family: 'VisbyCF-ExtraBold';
+                font-size: 1.2vw;
+                color: #FFFFFF;
+                margin-right: 1vw;
+            }
+
+            .community_three p {
+                font-size: 1.2vw;
+                display: inline;
+                color: #FFFFFF;
+            }
+
+            #community .community_four{
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                height: 100vh;
+                width: 100vw;
+                background: #FFBE4D;
+                margin: 0;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .community_four .content {
+                position: relative;
+                width: 37.6vw;
+                height: 22.3vw;
+            }
+
+            .community_four h1 {
+                font-family: 'Elephant-Italic';
+                font-size: 4vw;
+                letter-spacing: .3vw;
+                color: #FFFFFF;
+                filter: drop-shadow(-.2vw .2vw 0 rgba(132, 123, 215, 0.85));
+                margin-bottom: .6vw;
+                text-align: right;
+            }
+
+            .community_four h4 {
+                font-family: 'VisbyCF-Normal';
+                color: #FFFFFF;
+                font-size: 1.2vw;
+                text-align: right;
+                letter-spacing: .2vw;
+                width: 24vw;
+            }
+
+
+            .community_four .donut {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 16.8vw;
+                width: 16.8vw;
+            }
+
+            .community_four .donut_text {
+                position: absolute;
+                top: 6vw;
+                left: 6.7vw;
+                width: 30.7vw;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+            }
+            
+            .community_four .photos_left {
+                display: flex;
+                flex-direction: column;
+                margin-right: 10vw;
+            }
+
+            .community_four .one {
+                width: 14.5vw;
+                height: 11vw;
+                margin-bottom: 1vw;
+            }
+
+            .community_four .two {
+                width: 14.5vw;
+                height: 19vw;
+                margin-bottom: 1vw;
+            }
+
+            .community_four .three {
+                width: 14.5vw;
+                height: 11vw;
+            }
+
+            .community_four .photos_right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                margin-left: 10vw;
+            }
+
+            .community_four .four {
+                width: 15.7vw;
+                height: 11.8vw;
+                margin-bottom: 1vw;
+            }
+
+            .community_four .five {
+                width: 12.7vw;
+                height: 16.9vw;
+            }
+
+            #community .community_five{
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                height: 100vh;
+                width: 100vw;
+                background: #FFBE4D;
+                margin: 0;
+                align-items: center;
+            }
+
+            .community_five .content {
+                width: 40vw;
+                margin-left: 8vw;
+                margin-right: 8vw;
+            }
+
+            .community_five .title {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                width: 36vw;
+                justify-content: space-between;
+                margin-bottom: 1vw;
+            }
+
+            .community_five .letter_block {
+                width: 6vw;
+                height: 6vw;
+            }
+
+            .community_five p {
+                font-size: 1.5vw;
+                color: #FFFFFF;
+                margin-bottom: 1vw;
+            }
+
+            .community_five h2 {
+                text-align: left;
+                font-size: 2vw;
+                color: #FFFFFF;
+                margin-bottom: 2vw;
+            }
+
+            .community_five .bullet {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin-bottom: 1vw;
+                width: 30vw;
+            }
+
+            .community_five .number {
+                display: inline-block;
+                font-family: 'VisbyCF-ExtraBold';
+                font-size: 1.5vw;
+                margin-right: 1vw;
+                color: #FD8033;
+                background: #FFFFFF;
+                width: 2vw;
+                height: 2vw;
+                text-align: center;
+                border-radius: 50%;
+            }
+
+            .community_five h3 {
+                display: inline;
+                font-family: 'VisbyCF-ExtraBold';
+                font-size: 1.5vw;
+                color: #FFFFFF;
+            }
+
+            .community_five .bullet_text {
+                display: inline-block;
+                width: 26vw;
+            }
+
+            .community_five .content_right {
+                display: flex;
+                flex-direction: column;
+                width: 36vw;
+            }
+
+            .community_five .definition {
+                width: 30vw;
+                font-family: 'VisbyCF-Normal';
+                font-size: 1.3vw;
+                text-align: center;
+                background: #F69055;
+                padding: 2vw 3vw;
+                color: #FFFFFF;
+                margin-bottom: 2vw;
+            }
+
+            .community_five .bgc_highlight {
+                display: flex;
+                flex-direction: row;
+            }
+            
+            .community_five .bgc {
+                display: flex;
+                flex-direction: row;
+                width: 36vw;
+                align-items: center;
+                margin-bottom: 2vw;
+            }
+            
+            .community_five .bgc_highlight {
+                position: relative;
+                margin-right: 2vw;
+            }
+
+            .community_five .bgc_logo {
+                width: 8vw;
+                height: 8vw;
+                margin-right: 2vw;
+            }
+            
+            .community_five .crown {
+                position: absolute;
+                top: -3vw;
+                left: 1.5vw;
+                width: 5vw;
+                height: 5vw;
+            }
+
+            .community_five h4 {
+                font-family: 'VisbyCF-Normal';
+                color: #FFFFFF;
+                font-size: 1.3vw;
+            }
+
+            .community_five .photos {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+
+            .community_five .photo {
+                width: 16.5vw;
+                height: 12.5vw;
+            }
+
+            #projects {
+                width: 100vw;
+                height: 100vh;
+            }
+            
+
+            #projects h1 {
+                display: block;
+                font-size: 5vw;
+                margin-bottom: 1vw;
+                color: #FFFFFF;
+            }
+
+            #projects p {
+                display: block;
+                font-size: 1.5vw;
+                color: #FFFFFF;
+                margin-bottom: 2vw;
+            }
+
+            #projects .button {
+                display: inline-block;
+                font-family: 'VisbyCF-Normal';
+                font-size: 1.5vw;
+                text-decoration: none;
+                padding: 1.2vw 2vw;
+                background: #FFFFFF;
+                border-radius: 2vw;
+            }
+
+            #projects .photo {
+                z-index: 2;
+            }
+
+            #projects .project_thumbnail {
+                width: 40vw;
+                height: 35vw;
+                border-radius: 1vw;
+            }
+
+            #projects .left, .right {
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .left .background_text {
+                position: absolute;
+                display: inline;
+                bottom: 10vw;
+                left: 0vw;
+                font-family: 'VisbyCF-Bold';
+                font-size: 18vw;
+                -webkit-text-stroke: 1px #FFFFFF;
+                color: transparent;
+                z-index: 0;
+                line-height: 0%;
+            }
+
+            .right .background_text {
+                position: absolute;
+                display: inline;
+                top: 10vw;
+                right: 0vw;
+                font-family: 'VisbyCF-Bold';
+                font-size: 18vw;
+                -webkit-text-stroke: 1px #FFFFFF;
+                color: transparent;
+                z-index: 0;
+                line-height: 0%;
+            }
+
+            .left .content {
+                width: 40vw;
+                margin-left: 3vw;
+                z-index: 2;
+            }
+
+            .right .content {
+                width: 40vw;
+                margin-right: 3vw;
+                z-index: 2;
+            }
+            
+
+            .mapscout {
+                background: #FE5854;
+            }
+
+            .mapscout .button {
+                color: #FE5854;
+            }
+
+            .liv2bgirl {
+                background: #FD8033;
+            }
+
+            .liv2bgirl .button {
+                color: #FD8033;
+            }
+
+            .bgc_power {
+                background: #FFBE4D;
+            }
+
+            .bgc_power .button {
+                color: #FFBE4D;
+            }
+
+            .vms {
+                background: #7164ED;
+            }
+
+            .vms .button {
+                color: #7164ED;
+            }
+
+            .medshare {
+                background: #2D285C;
+            }
+
+            .medshare .button {
+                color: #2D285C;
+            }
+
+            .ims {
+                background: #FE5854;
+            }
+
+            .ims .button {
+                color: #FE5854;
+            }
+
+            .bgc_safety {
+                background: #FD8033;
+            }
+
+            .bgc_safety  .button {
+                color: #FD8033;
+            }
+
+            .dms {
+                background: #FFBE4D;
+            }
+
+            .dms  .button {
+                color: #FFBE4D;
+            }
+
+            .ombudsman {
+                background: #7164ED;
+            }
+
+            .ombudsman  .button {
+                color: #7164ED;
+            }
+
+            .vip {
+                background: #2D285C;
+            }
+
+            .vip .button {
+                color: #2D285C;
+            }
+
+            #bootcamp {
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+                background: #FFBE4D;
+            }
+
+            #bootcamp .hero {
+                position: absolute;
+                top: 2vw;
+                left: 6vw;
+                font-size: 8vw;
+                color: #FD8033;
+                filter: drop-shadow(-0.5vw 0 0 #2D285C);
+            }
+
+            #bootcamp .illo1 {
+                position: absolute;
+                width: 40vw;
+                top: 2vw;
+                left: 50vw;
+            }
+
+            #bootcamp .illo2 {
+                position: absolute;
+                width: 10vw;
+                top: 12vw;
+                left: 3vw;
+            }
+
+            #bootcamp .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-45%, -32%);
+            }
+
+            #bootcamp .testimonial {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin-bottom: 2vw;
+                align-items: center;
+            }
+
+            #bootcamp h2 {
+                color: #FB3552;
+                font-size: 1.5vw;
+                width: 75vw;
+                text-align: center;
+                margin-bottom: 2vw;
+            }
+
+            #bootcamp .blurb {
+                font-family: 'VisbyCF-Normal';
+                font-size: 1.2vw;
+                color: #FFFFFF;
+                background: #FD8033;
+                width: 50vw;
+                padding: 2vw 7vw;
+                border-radius: 60%;
+            }
+
+            #bootcamp .img {
+                width: 8vw;
+                height: 7.6vw;
+                border-radius: 2.2vw;
+                margin-left: 2vw;
+                margin-right: 2vw;
+            }
+
+            #taught {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100vw;
+                height: 100vh;
+                background: #FD8033;
+            }
+
+            #taught .lessons {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            #taught .board {
+                position: relative;
+                margin-top: 2vw;
+            }
+
+            #taught .topics {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -45%);
+            }
+
+            #taught h2 {
+                font-size: 2.5vw;
+                display: block;
+                color: #FFFFFF;
+                margin-bottom: 1vw;
+                width: 20vw;
+                text-align: center;
+            }
+
+            #taught .tag_one {
+                position: absolute;
+                top: .8vw;
+                left: 8.5vw;
+                font-family: 'VisbyCF-Bold';
+                font-size: 1.5vw;
+                color: #2D285C;
+                -webkit-text-stroke: .025vw #2D285C;;
+            }
+
+            #taught .tag_two {
+                position: absolute;
+                top: .8vw;
+                left: 9vw;
+                font-family: 'VisbyCF-Bold';
+                font-size: 1.5vw;
+                color: #2D285C;
+                -webkit-text-stroke: .025vw #2D285C;;
+            }
+
+            #taught .tag_three {
+                position: absolute;
+                top: .6vw;
+                left: 8.5vw;
+                font-family: 'VisbyCF-Bold';
+                font-size: 1.5vw;
+                color: #2D285C;
+                -webkit-text-stroke: .025vw #2D285C;;
+            }
+
+            #taught .one {
+                width: 26vw;
+            }
+
+            #taught .two {
+                width: 34.4vw;
+            }
+
+            #taught .three {
+                width: 29.4vw;
+            }
+
+            #taught h1 {
+                font-size: 20;
+                width: 100vw;
+                font-size: 10vw;
+                color: #FFBE4D;
+                filter: drop-shadow(-0.5vw 0 0 #2D285C);
+                text-align: center;
+            }
+        
+
+        </style>
+    </head>
+    <body>
+        <main id='main'>
+            <section id='hero'>
+                <div class='hero_container'>
+                    <div class='hero_content'>
+                        <img src='static/imgs/hero_logo.png' class='hero_logo'>
+                        <h2>2019 - 2020</h2>
+                    </div>
+                    <h1 class='hero'>Year in Review</h1>
+                    <h1 class='hero filled'>Year in Review</h1>
+                    <h1 class='hero'>Year in Review</h1>
+                    <h1 class='hero'>Year in Review</h1>
+                    <h1 class='hero'>Year in Review</h1>
+                    <h1 class='hero'>Year in Review</h1>
+                    <h1 class='hero'>Year in Review</h1>
+                </div>
+            </section>
+            
+            <section id='about'>
+                <div class='about_container'>
+                    <h2>This year, we saw the most growth in all areas of the organization since its inception.</h2>
+                    <img src='static/imgs/about_illo.svg' class='about_illo'>
+                </div>
+            </section>
+
+            <section id='stats'>
+                <div class='stats_container'>
+                    <div class='window_container'>
+                        <div class='window_content'>
+                            <h1>150+</h1>
+                            <h2>Members</h2>
+                        </div>
+                        <img src='static/imgs/window_1.svg' class='window'>
+                    </div>
+
+                    <div class='window_container'>
+                        <div class='window_content'>
+                            <h1>200+</h1>
+                            <h2>Meetings</h2>
+                        </div>
+                        <img src='static/imgs/window_2.svg' class='window'>
+                    </div>
+
+                    <div class='window_container'>
+                        <div class='window_content'>
+                            <h1>2000+</h1>
+                            <h2>Hours</h2>
+                        </div>
+                        <img src='static/imgs/window_3.svg' class='window'>
+                    </div>
+
+                    <div class='window_container'>
+                        <div class='window_content'>
+                            <h1>16</h1>
+                            <h2>Events</h2>
+                        </div>
+                        <img src='static/imgs/window_4.svg' class='window'>
+                    </div>
+                </div>
+            </section>
+
+            <section id='community'>
+                <div class='scroll_container'>
+                    <div class='community_one'>
+                        <div class='title'>
+                            <h2>celebrating</h2>
+                            <img src='static/imgs/community_hero.png' class='hero'>
+                        </div>
+
+                        <div class='photos'>
+                            <div class='img_container'>
+                                <img src='static/imgs/community_img1.jpg' class='bg_img one'>
+                                <div class='overlay one'></div>
+                            </div>
+    
+                            <div class='img_container'>
+                                <img src='static/imgs/community_img2.jpg' class='bg_img two'>
+                                <div class='overlay two'></div>
+                            </div>
+    
+                            <div class='img_container'>
+                                <img src='static/imgs/community_img3.jpg' class='bg_img three'>
+                                <div class='overlay three'></div>
+                            </div>
+    
+                            <div class='img_container'>
+                                <img src='static/imgs/community_img4.jpg' class='bg_img four'>
+                                <div class='overlay four'></div>
+                            </div>
+    
+                            <div class='img_container'>
+                                <img src='static/imgs/community_img5.jpg' class='bg_img five'>
+                                <div class='overlay five'></div>
+                            </div>
+    
+                            <div class='img_container'>
+                                <img src='static/imgs/community_img6.jpg' class='bg_img six'>
+                                <div class='overlay six'></div>
+                            </div>
+                        </div>
+
+                        <div class='continue_text'>
+                            <img src='static/imgs/arrow.svg'class='arrow'>
+                            <p>Scroll to see how we grew our community @BoG</p>
+                        </div>
+                    </div>
+                    
+                    <div class='community_two'>
+                        <div class='content'>
+                            <div class='title'>
+                                <img src='static/imgs/bits_b.svg' class="letter_block">
+                                <img src='static/imgs/bits_i.svg' class="letter_block">
+                                <img src='static/imgs/bits_t.svg' class="letter_block">
+                                <img src='static/imgs/bits_s.svg' class="letter_block">
+                                <img src='static/imgs/bits_excl.svg' class="letter_block">
+                            </div>
+                            <p>We introduced an internal point-keeping system to encourage some friendly competition and team bonding!</p>
+                            <h2>How do members earn bits?</h2>
+
+                            <div class='bullet'>
+                                <div class='number'>1</div>
+                                <div class='bullet_text'>
+                                    <h3>Attend Meetings</h3>
+                                </div>
+                            </div>
+
+                            <div class='bullet'>
+                                <div class='number'>2</div>
+                                <div class='bullet_text'>
+                                    <h3>Attend Social Events</h3>
+                                </div>
+                            </div>
+
+                            <div class='bullet'>
+                                <div class='number'>3</div>
+                                <div class='bullet_text'>
+                                    <h3>Hang out with fellow BoG members</h3>
+                                </div>
+                            </div>
+
+                            <div class='bullet'>
+                                <div class='number'>4</div>
+                                <div class='bullet_text'>
+                                    <h3>Go on a donut date</h3>
+                                </div>
+                            </div>
+
+                            <div class='bullet'>
+                                <div class='number'>5</div>
+                                <div class='bullet_text'>
+                                    <h3>Pics or it didn't happen! Post a photo on the #gt-bits-slack channel.</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='photos'>
+                            <img src='static/imgs/community2_img1.jpg' class='one'>
+                            <img src='static/imgs/community2_img2.jpg' class='two'>
+                            <img src='static/imgs/community2_img3.jpg' class='three'>
+                            <img src='static/imgs/community2_img4.jpg' class='four'>
+                        </div>
+
+                        <div class='continue_text'>
+                            <img src='static/imgs/arrow.svg'class='arrow'>
+                            <p>Continue</p>
+                        </div>
+                    </div>
+                    
+                    <div class='community_three'>
+                        <div class='title'>
+                            <img src='static/imgs/community3_banner.svg' class='hero'>
+                            <h3>These are the people who went above and beyond to get involved with the BoG Community.</h3>
+                        </div>
+
+                        <div class='bullets'>
+                            <div>
+                                <div class='bullet'>
+                                    <div class='number'>122</div>
+                                    <div class='bullet_text'>
+                                        <h3>Raymond Zhu</h3>
+                                        <p>(Product Manager)</p>
+                                    </div>
+                                </div>
+
+                                <div class='bullet'>
+                                    <div class='number'>99</div>
+                                    <div class='bullet_text'>
+                                        <h3>Shruthi Santhanam</h3>
+                                        <p>(Product Manager)</p>
+                                    </div>
+                                </div>
+
+                                <div class='bullet'>
+                                    <div class='number'>80</div>
+                                    <div class='bullet_text'>
+                                        <h3>Josh McFarlin</h3>
+                                        <p>(Engineering Manager)</p>
+                                    </div>
+                                </div>
+
+                                <div class='bullet'>
+                                    <div class='number'>79</div>
+                                    <div class='bullet_text'>
+                                        <h3>Daniel Hsing</h3>
+                                        <p>(Engineering Manager)</p>
+                                    </div>
+                                </div>
+
+                                <div class='bullet'>
+                                    <div class='number'>77</div>
+                                    <div class='bullet_text'>
+                                        <h3>Eric Matthews</h3>
+                                        <p>Bootcamper</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class='bullet'>
+                                    <div class='number'>75</div>
+                                    <div class='bullet_text'>
+                                        <h3>Jillian LaTour </h3>
+                                        <p>Developer</p>
+                                    </div>
+                                </div>
+
+                                <div class='bullet'>
+                                    <div class='number'>68</div>
+                                    <div class='bullet_text'>
+                                        <h3>Luke Kim</h3>
+                                        <p>(Developer)</p>
+                                    </div>
+                                </div>
+
+                                <div class='bullet'>
+                                    <div class='number'>67</div>
+                                    <div class='bullet_text'>
+                                        <h3>Bernadette Bal</h3>
+                                        <p>(Developer)</p>
+                                    </div>
+                                </div>
+
+                                <div class='bullet'>
+                                    <div class='number'>62</div>
+                                    <div class='bullet_text'>
+                                        <h3>Stephanie Luo</h3>
+                                        <p>(Designer)</p>
+                                    </div>
+                                </div>
+
+                                <div class='bullet'>
+                                    <div class='number'>58</div>
+                                    <div class='bullet_text'>
+                                        <h3>Sunny Qi</h3>
+                                        <p>(Developer)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='continue_text'>
+                            <img src='static/imgs/arrow.svg'class='arrow'>
+                            <p>Continue</p>
+                        </div>
+                    </div>
+
+                    <div class='community_four'>
+                        <div class='photos_left'>
+                            <img src='static/imgs/community4_img1.jpg' class='one'>
+                            <img src='static/imgs/community4_img2.jpg' class='two'>
+                            <img src='static/imgs/community4_img3.jpg' class='three'>
+                        </div>
+
+                        <div class='content'>
+                            <img src="static/imgs/community_4_donut.svg" class='donut'>
+                            <div class='donut_text'>
+                                <h1>Donut Dates</h1>
+                                <h4>Members could opt to participate in the Donut Date system to get to know other members better. They are paired with a random member of the organization by the Donut Bot and have a week to plan a meeting!</h4>
+                            </div>
+                        </div>
+
+                        <div class='photos_right'>
+                            <img src='static/imgs/community4_img4.jpg' class='four'>
+                            <img src='static/imgs/community4_img5.jpg' class='five'>
+                        </div>
+
+                        <div class='continue_text'>
+                            <img src='static/imgs/arrow.svg'class='arrow'>
+                            <p>Continue</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class='community_five'>
+                        <div class='content'>
+                            <div class='title'>
+                                <img src='static/imgs/bytes_b.svg' class="letter_block">
+                                <img src='static/imgs/bytes_y.svg' class="letter_block">
+                                <img src='static/imgs/bytes_t.svg' class="letter_block">
+                                <img src='static/imgs/bytes_e.svg' class="letter_block">
+                                <img src='static/imgs/bytes_s.svg' class="letter_block">
+                            </div>
+                            <p>To keep project teams motivated and encourage team bonding, we introduced bytes for project teams!</p>
+                            <h2>How do teams earn bytes?</h2>
+
+                            <div class='bullet'>
+                                <div class='number'>1</div>
+                                <div class='bullet_text'>
+                                    <h3>Attend group outings!</h3>
+                                </div>
+                            </div>
+
+                            <div class='bullet'>
+                                <div class='number'>2</div>
+                                <div class='bullet_text'>
+                                    <h3>Win a Byte Brawl!</h3>
+                                </div>
+                            </div>
+
+                            <div class='bullet'>
+                                <div class='number'>3</div>
+                                <div class='bullet_text'>
+                                    <h3>Attend a team sprint day!</h3>
+                                </div>
+                            </div>
+
+                            <div class='bullet'>
+                                <div class='number'>4</div>
+                                <div class='bullet_text'>
+                                    <h3>Pics or it didn't happen! Post a photo on the #gt-bits-slack channel.</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='content_right'>
+                            <div class='definition'>BYTE BRAWL (noun) - A competition between teams involving a specific prompt. For example, “Create a team logo”. Top teams receive bytes for winning.</div>
+                            <div class='bgc'>
+                                <div class='bgc_highlight'>
+                                    <img src="static/imgs/community5_bgc.jpg" class='bgc_logo'>
+                                    <img src="static/imgs/community5_crown.svg" class='crown'>
+                                </div>
+                                <h4>BGC Safety - the winner of the “Best Team Logo” Byte Brawl</h4>
+                            </div>
+                            <div class='photos'>
+                                <img src="static/imgs/community5_img1.jpg" class='photo'>
+                                <img src="static/imgs/community5_img2.jpg" class='photo'>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+
+            <section id='projects'>
+                <div class='left mapscout'>
+                    <div class='photo'>
+                        <img src='static/imgs/projects_mapscout.jpg' class='project_thumbnail'>
+                    </div>
+                    <div class='content'>
+                        <h1>Mapscout</h1>
+                        <p>Creating a fully customizable, easily
+                            expandable, and intuitively filterable
+                            interactive resource map that connects
+                            patients with behavioral health services.</p>
+                        <a href="https://bitsofgood.org/projects/mapscout" class='button'>Read More</a>
+                    </div>
+                    <div class='background_text'>Mapscout</div>
+                </div>
+
+                <div class='right liv2bgirl'>
+                    <div class='content'>
+                        <h1>Liv2BGirl</h1>
+                        <p>Addressing the negative impact of social
+                            media on young women by creating a
+                            positive and supportive social media
+                            platform.</p>
+                        <a href="https://bitsofgood.org/projects/liv2bgirl" class='button'>Read More</a>
+                    </div>
+                    <div class='photo'>
+                        <img src='static/imgs/projects_liv2girl.jpg' class='project_thumbnail'>
+                    </div>
+                    <div class='background_text'>Liv2BGirl</div>
+                </div>
+
+                <div class='left bgc_power'>
+                    <div class='photo'>
+                        <img src='static/imgs/projects_bgcpower.jpg' class='project_thumbnail'>
+                    </div>
+                    <div class='content'>
+                        <h1>Boys and Girls Club of Metro Atlanta Power</h1>
+                        <p>Building a robust, intuitive, and cost-
+                            effective data visualization workspace in
+                            Microsoft Power BI.</p>
+                        <a href="https://bitsofgood.org/projects/bgcma-power" class='button'>Read More</a>
+                    </div>
+                    <div class='background_text'>BGC Power</div>
+                </div>
+
+                <div class='right vms'>
+                    <div class='content'>
+                        <h1>Volunteer Management Solution</h1>
+                        <p>Designing a general solution for nonprofits
+                            to accept volunteers,manage mass emails,
+                            and advertise new volunteering events.</p>
+                        <a href="https://bitsofgood.org/projects/vms" class='button'>Read More</a>
+                    </div>
+                    <div class='photo'>
+                        <img src='static/imgs/projects_vms.jpg' class='project_thumbnail'>
+                    </div>
+                    <div class='background_text'>VMS</div>
+                </div>
+
+                <div class='left medshare'>
+                    <div class='photo'>
+                        <img src='static/imgs/projects_medshare.jpg' class='project_thumbnail'>
+                    </div>
+                    <div class='content'>
+                        <h1>Medshare</h1>
+                        <p>Improving management of donated
+                            medical supplies at MedShare warehouses
+                            nationwide.</p>
+                        <a href="https://bitsofgood.org/projects/medshare" class='button'>Read More</a>
+                    </div>
+                    <div class='background_text'>Medshare</div>
+                </div>
+
+                <div class='right ims'>
+                    <div class='content'>
+                        <h1>Inventory Management Solution</h1>
+                        <p>Building a more efficient inventory
+                            management system for a Honduran
+                            children’s home.</p>
+                        <a href="https://bitsofgood.org/projects/ims" class='button'>Read More</a>
+                    </div>
+                    <div class='photo'>
+                        <img src='static/imgs/projects_ims.jpg' class='project_thumbnail'>
+                    </div>
+                    <div class='background_text'>IMS</div>
+                </div>
+
+                <div class='left bgc_safety'>
+                    <div class='photo'>
+                        <img src='static/imgs/projects_bgcsafety.jpg' class='project_thumbnail'>
+                    </div>
+                    <div class='content'>
+                        <h1>Boys & Girls Club of Metro Atlanta Safety</h1>
+                        <p>Creating an improved, user-friendly bus
+                            attendance system for the Boys & Girls
+                            Club of Metro Atlanta.</p>
+                        <a href="https://bitsofgood.org/projects/bgc-safety" class='button'>Read More</a>
+                    </div>
+                    <div class='background_text'>BGC Safety</div>
+                </div>
+
+                <div class='right dms'>
+                    <div class='content'>
+                        <h1>Donation Management Solution</h1>
+                        <p>Designing a centralized web-platform for
+                            users to make donations and purchase 
+                            nonprofit merchandise online.</p>
+                        <a href="https://bitsofgood.org/projects/dms" class='button'>Read More</a>
+                    </div>
+                    <div class='photo'>
+                        <img src='static/imgs/projects_dms.jpg' class='project_thumbnail'>
+                    </div>
+                    <div class='background_text'>DMS</div>
+                </div>
+
+                <div class='left ombudsman'>
+                    <div class='photo'>
+                        <img src='static/imgs/projects_ombudsman.jpg' class='project_thumbnail'>
+                    </div>
+                    <div class='content'>
+                        <h1>Ombudsman</h1>
+                        <p>Creating an easy to use website that can
+                            retrieve relevant documents upon key
+                            word searches.</p>
+                        <a href="https://bitsofgood.org/projects/ombudsman" class='button'>Read More</a>
+                    </div>
+                    <div class='background_text'>Ombudsman</div>
+                </div>
+
+                <div class='right vip'>
+                    <div class='content'>
+                        <h1>VIP</h1>
+                        <p>Working with BoG training students for
+                            project work, reviewing progress, and
+                            completing software-intensive projects for
+                            non-profits and government </p>
+                        <a href="https://www.vip.gatech.edu/teams/bits-good" class='button'>Read More</a>
+                    </div>
+                    <div class='photo'>
+                        <img src='static/imgs/projects_vip.jpg' class='project_thumbnail'>
+                    </div>
+                    <div class='background_text'>VIP</div>
+                </div>
+            </section>
+
+            <section id='bootcamp'>
+                <h1 class='hero'>Bootcamp</h1>
+                <img src='static/imgs/bootcamp_illo1.svg' class='illo1'>
+                <img src='static/imgs/bootcamp_illo2.svg' class='illo2'>
+                <div class='content'>
+                    <h2>In addition to expanding BoG through our non-profit partners and our online assets like our website, we have our programming bootcamp that provides underclassmen.</h2>
+                    <div class=testimonial>
+                        <div class='blurb'>Hey, I’m Ben Trainor, a bootcamper in backend. We had a comprehensive curriculum for the first time in the topic’s recent history and gave insight into the server-side of computing absent from my prior web design exposure and [got] cool projects that involved activities like creating a Twitter bot and Reddit clone.  Would highly recommend the bootcamp for anyone wanting a thorough introduction to web design.</div>
+                        <img src='static/imgs/bootcamp_img1.jpg' class='img'>
+                    </div>
+                    <div class=testimonial>
+                        <img src='static/imgs/bootcamp_img2.jpg' class='img'>
+                        <div class='blurb'>“I was in frontend for bootcamp. Bootcamp was my first exposure to web development, and I think that I now have a good understanding of the basics. It has been a very valuable experience, and as a result I have changed my major to Computational Media and have decided that I probably want to find a job in something related to web development/ design. “ - Syd Balcom</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="taught">
+                <div class='lessons'>
+                    <div class='board'>
+                        <div class='topics'>
+                            <h2>JSX</h2>
+                            <h2>React</h2>
+                            <h2>Rounting</h2>
+                        </div>
+                        <h3 class='tag_one'>FRONTEND</h3>
+                        <img src='static/imgs/taught_1.svg' class='one'>
+                    </div>
+                    <div class='board'>
+                        <div class='topics'>
+                            <h2>CSS</h2>
+                            <h2>HTML</h2>
+                            <h2>HTTP Protocol</h2>
+                        </div>
+                        <h3 class='tag_two'>FRONTEND AND BACKEND</h3>
+                        <img src='static/imgs/taught_2.svg' class='two'>
+                    </div>
+                    <div class='board'>
+                        <div class='topics'>
+                            <h2>Express</h2>
+                            <h2>Node</h2>
+                            <h2>Mongo DB</h2>
+                            <h2>DB Design</h2>
+                        </div>
+                        <h3 class='tag_three'>BACKEND</h3>
+                        <img src='static/imgs/taught_3.svg' class='three'>
+                    </div>
+                </div>
+                <h1>WHAT WE TAUGHT</h1>
+            </section>
+            
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+        <script src="js/ScrollTrigger.min.js" ></script>
+        <script src="js/flickity.pkgd.min.js"></script>
+       
+       <script>
+           let container = document.querySelector(".scroll_container");
+           let static = document.querySelector("#community");
+
+            gsap.to(container, {
+                x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+                ease: "none",
+                scrollTrigger: {
+                    trigger: container,
+                    start: "top top",
+                    invalidateOnRefresh: true,
+                    pin: true,
+                    scrub: 0.25,
+                    end: () => "+=" + container.scrollWidth
+                }
+            })
+        </script>
+
+        <script>
+            var elem = document.querySelector('#projects');
+            var flkty = new Flickity( elem, {
+                // options
+                cellAlign: 'left',
+                contain: true
+            });
+        </script>
+
+    </body>
+</html>
