@@ -1,0 +1,47 @@
+<svg width="1366" height="762" viewBox="0 0 1366 762" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1244" y="36" width="18" height="18" transform="rotate(-30 1244 36)" fill="#7164ED"/>
+<rect x="752" y="46" width="18" height="18" transform="rotate(-30 752 46)" fill="#7164ED"/>
+<rect x="1291" y="43" width="10" height="10" transform="rotate(30 1291 43)" fill="#FE5854"/>
+<rect x="965" y="17" width="10" height="10" transform="rotate(30 965 17)" fill="#FE5854"/>
+<rect x="1265" y="73.6235" width="14" height="14" transform="rotate(-15 1265 73.6235)" fill="#FD8033"/>
+<rect x="497" y="279.624" width="14" height="14" transform="rotate(-15 497 279.624)" fill="#FD8033"/>
+<rect x="1191.92" y="30" width="14" height="14" transform="rotate(25 1191.92 30)" fill="white"/>
+<rect x="172" y="35" width="10" height="10" transform="rotate(30 172 35)" fill="#FD8033"/>
+<rect x="1070" y="18" width="10" height="10" transform="rotate(-30 1070 18)" fill="#FD8033"/>
+<rect x="425" y="11" width="10" height="10" transform="rotate(30 425 11)" fill="#FD8033"/>
+<rect x="366" y="47" width="10" height="10" transform="rotate(30 366 47)" fill="#FD8033"/>
+<rect x="98" y="37" width="10" height="10" transform="rotate(30 98 37)" fill="#FE5854"/>
+<rect x="867" y="281" width="10" height="10" transform="rotate(30 867 281)" fill="#FE5854"/>
+<rect x="834" y="236" width="10" height="10" transform="rotate(30 834 236)" fill="#FE5854"/>
+<rect x="54" y="112" width="10" height="10" transform="rotate(30 54 112)" fill="#FD8033"/>
+<rect x="194" y="73.6235" width="14" height="14" transform="rotate(-15 194 73.6235)" fill="white"/>
+<rect x="446" y="-0.376465" width="14" height="14" transform="rotate(-15 446 -0.376465)" fill="white"/>
+<rect x="16" y="16.6235" width="14" height="14" transform="rotate(-15 16 16.6235)" fill="#FE5854"/>
+<rect x="321" y="19.6235" width="14" height="14" transform="rotate(-15 321 19.6235)" fill="#FE5854"/>
+<rect x="102" y="23.6235" width="14" height="14" transform="rotate(-15 102 23.6235)" fill="white"/>
+<rect x="463" y="211" width="14" height="14" transform="rotate(-30 463 211)" fill="white"/>
+<rect x="850" y="231" width="14" height="14" transform="rotate(-30 850 231)" fill="white"/>
+<rect x="777" y="21.6235" width="14" height="14" transform="rotate(-15 777 21.6235)" fill="white"/>
+<rect x="134" y="59" width="18" height="18" transform="rotate(-30 134 59)" fill="#7164ED"/>
+<rect x="494" y="220" width="18" height="18" transform="rotate(-30 494 220)" fill="#FD8033"/>
+<rect x="76" y="411.147" width="36.2942" height="36.2942" transform="rotate(-30 76 411.147)" fill="#FD8033"/>
+<rect x="1268" y="153.147" width="36.2942" height="36.2942" transform="rotate(-30 1268 153.147)" fill="#FE5854"/>
+<rect x="132.532" y="443.526" width="20.9279" height="20.9279" transform="rotate(11.2365 132.532 443.526)" fill="#FD8033"/>
+<rect x="79.7492" y="479.62" width="20.9279" height="20.9279" transform="rotate(-34.5581 79.7492 479.62)" fill="#FD8033"/>
+<path d="M1366.4 179C1316.9 183 1226.5 218.6 1260.9 329C1295.3 439.4 1236.57 450 1202.9 441.5C1196.23 434.667 1188.5 419 1210.9 411C1238.9 401 1249.4 477 1217.9 533" stroke="#FE5854" stroke-width="3"/>
+<rect x="932" y="-5.37646" width="14" height="14" transform="rotate(-15 932 -5.37646)" fill="#FD8033"/>
+<rect x="273" y="-3" width="18" height="18" transform="rotate(-30 273 -3)" fill="#7164ED"/>
+<rect x="1317" y="23.6235" width="14" height="14" transform="rotate(-15 1317 23.6235)" fill="white"/>
+<rect x="640" y="21.6235" width="14" height="14" transform="rotate(-15 640 21.6235)" fill="white"/>
+<rect x="-54" y="667.451" width="108.901" height="108.901" transform="rotate(-30 -54 667.451)" fill="#FD8033"/>
+<rect x="1284" y="584.402" width="94.8042" height="94.8042" transform="rotate(-30 1284 584.402)" fill="#FE5854"/>
+<path d="M0 182.225C36 179.559 56.2 199.825 45 282.225C31 385.225 147 337.225 132 310.225C117 283.225 75 336.225 150 404.225" stroke="#FD8033" stroke-width="3" stroke-linejoin="round"/>
+<path d="M427.371 289.198C451.793 232.761 501.34 220.186 628.087 309.301C786.52 420.694 800.311 204.274 743.836 203.129C687.362 201.984 741.035 311.591 913.059 258.541" stroke="url(#paint0_linear)" stroke-width="3" stroke-linejoin="round"/>
+<rect x="1269.25" y="670" width="55.144" height="55.144" transform="rotate(26.0858 1269.25 670)" fill="#FE5854"/>
+<defs>
+<linearGradient id="paint0_linear" x1="793" y1="483.945" x2="894.421" y2="179.198" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FD8033"/>
+<stop offset="1" stop-color="#FB3552"/>
+</linearGradient>
+</defs>
+</svg>

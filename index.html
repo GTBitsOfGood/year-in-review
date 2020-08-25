@@ -25,7 +25,6 @@
                 -webkit-font-smoothing: subpixel-antialiased;
                 -webkit-font-smoothing: antialiased;
                 height: 100%;
-                overflow: visible;
             }
 
             a,body,button,div,footer,form,h1,h2,h3,h4,header,html,img,input,label,li,nav,p,select,span,table,textarea,ul {
@@ -1386,6 +1385,178 @@
             }
 
 
+            #marketing_section {
+                width: 100vw;
+                height: 100vh;
+                background: #FFBE4D;
+                overflow-y: hidden; 
+                overflow-x: hidden;
+            }
+
+            #marketing_section .content_container {
+                position: relative;
+            }
+
+            #marketing_section .bg_img {
+                position: absolute;
+                width: 100vw;
+                top: -1vw;
+                left: 0vw;
+            }
+
+            #marketing_section h1 {
+                color: #FFFFFF;
+                font-size: 4vw;
+                position: absolute;
+                text-align: center;
+                top: 4vw;
+                left: 50%;
+                transform: translateX(-50%);
+                filter: drop-shadow(-.5vw .5vw 0 #FB3552);
+            }
+
+            #marketing_section p {
+                font-family: 'VisbyCF-Bold';
+                font-size: 1.2vw;
+                color: white;
+                position: absolute;
+                width: 20vw;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                text-align: center;
+            }
+
+
+            #marketing_section .box_content {
+                position: relative;
+                width: 20vw;
+                margin-bottom: 3vw;
+                z-index: 1;
+            }
+
+            #marketing_section .box {
+                width: 20vw;
+                z-index: 1;
+            }
+
+            #marketing_section .left_one {
+                position: absolute;
+                left: 12vw;
+                top: 10vw;
+            }
+
+            #marketing_section .left_two {
+                position: absolute;
+                left: 24vw;
+                top: 24vw;
+            }
+
+            #marketing_section .left_three {
+                position: absolute;
+                left: 12vw;
+                top: 30vw;
+            }
+
+            #marketing_section .left_four {
+                position: absolute;
+                left: 24vw;
+                top: 36vw;
+            }
+
+            #marketing_section .left_five {
+                position: absolute;
+                left: 12vw;
+                top: 42vw;
+            }
+
+            #marketing_section .right_one {
+                position: absolute;
+                right: 12vw;
+                top: 12vw;
+            }
+
+            #marketing_section .right_two {
+                position: absolute;
+                right: 24vw;
+                top: 26vw;
+            }
+
+            #marketing_section .right_three {
+                position: absolute;
+                right: 12vw;
+                top: 33vw;
+            }
+
+            #marketing_section .right_four {
+                position: absolute;
+                right: 24vw;
+                top: 39vw;
+            }
+
+            #covid {
+                width: 100vw;
+                background: #2D285C;
+                display: flex;
+                flex-direction: row;
+            }
+
+            #covid .right_content {
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+                padding-top: 15vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                width: 40vw;
+            }
+
+            #covid h1 {
+                display: block;
+                color: #FFFFFF;
+                font-size: 4vw;
+                margin-bottom: 2vw;
+                filter: drop-shadow(-1vw -1vw 0 #FD8033);
+            }
+
+            #covid p {
+                font-size: 1.4vw;
+                text-align: right;
+                color: #FFBE4D;
+                width: 35vw;
+            }
+
+            #covid .left_content {
+                display: flex;
+                flex-direction: column;
+                width: 40vw;
+                margin-right: 8vw;
+                margin-left: 5vw;
+            }
+
+            #covid img:first-child {
+                margin-top: 4vw;
+            }
+
+            #covid .img_left {
+                width: 30vw;
+                height: auto;
+                margin-bottom: 4vw; 
+            }
+
+            #covid .img_right {
+                width: 30vw;
+                margin-bottom: 4vw; 
+                margin-left: 10vw;
+            }
+
+
+
+
+
 
         </style>
     </head>
@@ -1992,6 +2163,68 @@
                     <p>The <strong>non-profit partnership team</strong> manages the recruitment, screening, and partnership with non-profits that reach out to Bits of Good, while <strong>product managers</strong> help maintain and ensure the quality and feasibility of the work that our engineers do.</p>
                     </div>
                     <img src='static/imgs/product_illo.svg' class='product_illo'>
+                </div>
+            </section>
+
+            <section id='marketing_section'>
+                <div class='content_container'>
+                    <h1>Operations and Marketing</h1>
+                    <div class='left_content'>
+                        <div class='box_content  left_one'>
+                            <p>Our operations committee is responsible for managing our members, managing our funds, and making sure the logistics of running an organization are all figured out so we can run like a well-oiled machine</p>
+                            <img src='static/imgs/marketing_leftbox1.svg' class='box'>
+                        </div>
+                        <div class='box_content  left_two'>
+                            <p>Some of the events they helped make a success this year:</p>
+                            <img src='static/imgs/marketing_leftbox2.svg' class='box'>
+                        </div>
+                        <div class='box_content  left_three'>
+                            <p><heavy>MEMBER RETREAT</heavy></p>
+                            <img src='static/imgs/marketing_leftbox3.svg' class='box'>
+                        </div>
+                        <div class='box_content  left_four'>
+                            <p><heavy>LAUNCH PARTY</heavy></p>
+                            <img src='static/imgs/marketing_leftbox4.svg' class='box'>
+                        </div>
+                        <div class='box_content  left_five'>
+                            <p><heavy>DEMO DAY</heavy></p>
+                            <img src='static/imgs/marketing_leftbox5.svg' class='box'>
+                        </div>
+                    </div>
+
+                    <div class='right_content'>
+                        <div class='box_content  right_one'>
+                            <p>Our operations committee is responsible for managing our members, managing our funds, and making sure the logistics of running an organization are all figured out so we can run like a well-oiled machine</p>
+                            <img src='static/imgs/marketing_rightbox1.svg' class='box'>
+                        </div>
+                        <div class='box_content  right_two'>
+                            <p>Some of the events they helped make a success this year:</p>
+                            <img src='static/imgs/marketing_rightbox2.svg' class='box'>
+                        </div>
+                        <div class='box_content  right_three'>
+                            <p><heavy>MEMBER RETREAT</heavy></p>
+                            <img src='static/imgs/marketing_rightbox3.svg' class='box'>
+                        </div>
+                        <div class='box_content  right_four'>
+                            <p><heavy>LAUNCH PARTY</heavy></p>
+                            <img src='static/imgs/marketing_rightbox4.svg' class='box'>
+                        </div>
+                    </div>
+                    <img src='static/imgs/marketing_bg.svg' class='bg_img'>
+                </div>
+            </section>
+
+            <section id='covid'>
+                <div class='left_content'>
+                    <img src='static/imgs/covid_img1.jpg' class='img_left'>
+                    <img src='static/imgs/covid_img2.jpg' class='img_right'>
+                    <img src='static/imgs/covid_img3.jpg' class='img_left'>
+                    <img src='static/imgs/covid_img4.jpg' class='img_right'>
+                    <img src='static/imgs/covid_img5.jpg' class='img_left'>
+                </div>
+                <div class='right_content'>
+                    <h1>BoG during COVID</h1>
+                    <p>While we were all exiled off GT's campus half way through the year, we still met up and hung out virtually tracking productivity together, working on our development, and spending way too much time on zoom and discord.</p>
                 </div>
 
             </section>
