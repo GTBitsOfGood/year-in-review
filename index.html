@@ -493,6 +493,21 @@
                 margin-bottom: 1vw;
             }
 
+            .community_three .raymond {
+                background: #FE5854;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'VisbyCF-ExtraBold';
+                font-size: 1.2vw;
+                margin-right: 1.5vw;
+                color: #FFFFFF;
+                width: 3vw;
+                height: 3vw;
+                text-align: center;
+                border-radius: 50%;
+            }
+
             .community_three .number {
                 display: flex;
                 align-items: center;
@@ -1543,7 +1558,7 @@
 
             #covid .img_left {
                 width: 30vw;
-                height: auto;
+                height: fit-content;
                 margin-bottom: 4vw; 
             }
 
@@ -1553,6 +1568,77 @@
                 margin-left: 10vw;
             }
 
+            #closing {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+            #closing h1 {
+                display: block;
+                color: #FFBE4D;
+                font-size: 4vw;
+                width: 40vw;
+                margin-bottom: 2vw;
+                margin-top: 8vw;
+                filter: drop-shadow(-.3vw .3vw 0 #2D285C);
+                -webkit-text-stroke: .1vw #2D285C;
+            }
+
+            #closing h3 {
+                font-family: 'VisbyCF-Bold';
+                display: block;
+                color: #2D285C;
+                font-size: 1.4vw;
+                width: 40vw;
+            }
+
+            #closing p {
+                color: #2D285C;
+                font-size: 1vw;
+                display: block;
+                width: 40vw;
+                margin-bottom: 2vw;
+            }
+
+            #closing .left {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                background: #F69055;
+                align-items: center;
+                height: 100vh;
+                width: 50vw;
+                overflow: hidden;
+            }
+
+            #closing .right {
+                display: flex;
+                flex-direction: column;
+                background: #2D285C;
+                height: 100vh;
+                width: 50vw;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #closing .right p {
+                color: #FFBE4D;
+            }
+
+            #closing .right h3 {
+                color: #FFBE4D;
+                margin-bottom: 2vw;
+            }
+
+            #closing .closing_illo {
+                position: absolute;
+                width: 55vw;
+                bottom: -.1vw;
+                left: 0vw;
+            }
 
 
 
@@ -1721,11 +1807,6 @@
                             <img src='static/imgs/community2_img3.jpg' class='three'>
                             <img src='static/imgs/community2_img4.jpg' class='four'>
                         </div>
-
-                        <div class='continue_text'>
-                            <img src='static/imgs/arrow.svg'class='arrow'>
-                            <p>Continue</p>
-                        </div>
                     </div>
                     
                     <div class='community_three'>
@@ -1737,7 +1818,7 @@
                         <div class='bullets'>
                             <div>
                                 <div class='bullet'>
-                                    <div class='number'>122</div>
+                                    <div class='raymond'>122</div>
                                     <div class='bullet_text'>
                                         <h3>Raymond Zhu</h3>
                                         <p>(Product Manager)</p>
@@ -1819,10 +1900,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class='continue_text'>
-                            <img src='static/imgs/arrow.svg'class='arrow'>
-                            <p>Continue</p>
-                        </div>
                     </div>
 
                     <div class='community_four'>
@@ -1844,12 +1921,6 @@
                             <img src='static/imgs/community4_img4.jpg' class='four'>
                             <img src='static/imgs/community4_img5.jpg' class='five'>
                         </div>
-
-                        <div class='continue_text'>
-                            <img src='static/imgs/arrow.svg'class='arrow'>
-                            <p>Continue</p>
-                        </div>
-                        
                     </div>
 
                     <div class='community_five'>
@@ -2229,6 +2300,22 @@
 
             </section>
             
+            <section id='closing'>
+                <div class='left'>
+                    <h1>Closing Remarks From Our Execs</h1>
+                    <p>Having been in Bits of Good my entire college career, I must say writing my farewell is a bit surreal. For the past three years, I've been lucky enough to work with peers who have been far smarter than me, building something our university has never seen. Just within the last year, we've achieved so much, persevering past many obstacles, but even so, there's still so much to do. Though it won't be apart of my responsibility anymore, Bits of Good is in stronger hands than when I first arrived. It gives me great pride to say I was a part of Bits of Good, and as I look forward, I know everyone will thrive beyond my wildest imagination. But most of all, I know they will always be doing a bit of good.</p>
+                    <h3>James Wang</h3>
+                    <img src='static/imgs/closing_city.svg' class='closing_illo'>
+                </div>
+                <div class='right'>
+                    <h3>An Open Letter to Bits of Good,</h3>
+                    <p>It’s hard to pinpoint the exact moment that Bits of Good became the highlight of my time at Tech, and yet somehow, this CS club has managed to meander its way into my heart in just these past three short semesters. </p>
+                    <p>Thank you for these unforgettable memories with my amazing Operations committee, my fellow board members, and the incredible people I’ve grown to call my BoG family. From rooftop juice nights, to getting absolutely destroyed by tweens at trampoline dodgeball, to alternating between meetings and naps on The Garage’s beanbag, I wouldn’t trade a single moment for more sleep, better grades, or a W-less transcript. You’ve taught me perseverance and hard work (and how to sit through six meetings in a row). You’ve opened my eyes to hope and resilience as I watch our nonprofit partners work tirelessly to improve their communities, day after day. You’ve given me opportunities to grow and lead that I never could have imagined for myself as an impressionable underclassman on my first project team (shoutout to Bright Futures). But most importantly, thank you for pouring so much into me and continuously pushing me to mature as a developer, a leader, and now, a college graduate. </p>
+                    <p>I know that leaving Tech means that I’ll no longer be able to witness firsthand all the amazing work that BoG is doing, but I have no doubt that you’re in good hands with our next Exec Board. Thank you for letting me play my part in this big, beautiful organization, and let’s continue to work together to improve our world, one bit at a time. </p>
+                    <p>Love,</p>
+                    <h3>Michelle Liu, Class of 2020</h3>
+                </div>
+            </section>
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
         <script src="js/ScrollTrigger.min.js" ></script>
