@@ -108,6 +108,7 @@
                 position: absolute;
                 bottom: 5vw;
                 right: 5vw;
+                z-index: 3;
             }
 
             #hero .hero_logo {
@@ -149,6 +150,7 @@
                 height: 100vh;
                 width: 100vw;
                 background: #2D285C;
+                overflow-y: hidden;
             }
 
             #stats h1 {
@@ -176,6 +178,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 width: 80vw;
+                z-index: 2;
             }
 
             #stats .window_container {
@@ -193,6 +196,38 @@
                 top: 7.5vw;
                 left: 50%;
                 transform: translateX(-50%);
+            }
+
+            #stats .cloud1 {
+                position: absolute;
+                top: 8vh;
+                left: 2vw;
+                width: 18vw;
+                z-index: 3;
+            }
+
+            #stats .cloud2 {
+                position: absolute;
+                bottom: 5vh;
+                left: 15vw;
+                width: 48vw;
+                z-index: 1;
+            }
+
+            #stats .cloud3 {
+                position: absolute;
+                bottom: 55vh;
+                left: 20vw;
+                width: 12vw;
+                z-index: 3;
+            }
+
+            #stats .cloud4 {
+                position: absolute;
+                bottom: 33vh;
+                left: -20vw;
+                width: 25vw;
+                z-index: 1;
             }
 
             #community {
@@ -227,6 +262,7 @@
             }
 
             .scroll_container {
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
@@ -1654,19 +1690,19 @@
                         <img src='static/imgs/hero_logo.png' class='hero_logo'>
                         <h2>2019 - 2020</h2>
                     </div>
-                    <h1 class='hero'>Year in Review</h1>
-                    <h1 class='hero filled'>Year in Review</h1>
-                    <h1 class='hero'>Year in Review</h1>
-                    <h1 class='hero'>Year in Review</h1>
-                    <h1 class='hero'>Year in Review</h1>
-                    <h1 class='hero'>Year in Review</h1>
-                    <h1 class='hero'>Year in Review</h1>
+                    <h1 class='hero fade-hero'>Year in Review</h1>
+                    <h1 class='hero filled fade-hero'>Year in Review</h1>
+                    <h1 class='hero fade-hero'>Year in Review</h1>
+                    <h1 class='hero fade-hero'>Year in Review</h1>
+                    <h1 class='hero fade-hero'>Year in Review</h1>
+                    <h1 class='hero fade-hero'>Year in Review</h1>
+                    <h1 class='hero fade-hero'>Year in Review</h1>
                 </div>
             </section>
             
             <section id='about'>
                 <div class='about_container'>
-                    <h2>This year, we saw the most growth in all areas of the organization since its inception.</h2>
+                    <h2 class='fade-about'>This year, we saw the most growth in all areas of the organization since its inception.</h2>
                     <img src='static/imgs/about_illo.svg' class='about_illo'>
                 </div>
             </section>
@@ -1705,6 +1741,10 @@
                         <img src='static/imgs/window_4.svg' class='window'>
                     </div>
                 </div>
+                <img src='static/imgs/cloud1.svg' class='cloud1'>
+                <img src='static/imgs/cloud3.svg' class='cloud2'>
+                <img src='static/imgs/cloud2.svg' class='cloud3'>
+                <img src='static/imgs/cloud2.svg' class='cloud4'>
             </section>
 
             <section id='community'>
@@ -2320,10 +2360,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
         <script src="js/ScrollTrigger.min.js" ></script>
         <script src="js/flickity.pkgd.min.js"></script>
+        <script src="js/scrollreveal.min.js"></script>
+
+        <script>
+            ScrollReveal().reveal('.fade-hero', { delay: 2, opacity: 0, duration: 500, distance: "0px", easing: 'ease-out', interval: 100, viewFactor: 0 });
+            ScrollReveal().reveal('.fade-about', { delay: 1, opacity: 0, duration: 1000, distance: "50px", easing: 'ease-out', interval: 50, viewFactor: 0 });
+        </script>
        
        <script>
            let container = document.querySelector(".scroll_container");
            let static = document.querySelector("#community");
+            
+            gsap.registerPlugin(ScrollTrigger);
 
             gsap.to(container, {
                 x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
@@ -2337,6 +2385,51 @@
                     end: () => "+=" + container.scrollWidth
                 }
             })
+
+            gsap.to(".cloud1" , {
+                scrollTrigger: {
+                    trigger: "#stats",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true,
+                },
+                x: "40vw",
+                ease: "ease-out",
+            });
+
+            gsap.to(".cloud2" , {
+                scrollTrigger: {
+                    trigger: "#stats",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true,
+                },
+                x: "20vw",
+                ease: "ease-out",
+            });
+
+            gsap.to(".cloud3" , {
+                scrollTrigger: {
+                    trigger: "#stats",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true,
+                },
+                x: "80vw",
+                ease: "ease-out",
+            });
+
+            gsap.to(".cloud4" , {
+                scrollTrigger: {
+                    trigger: "#stats",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true,
+                },
+                x: "25vw",
+                ease: "ease-out",
+            });
+
         </script>
 
         <script>
