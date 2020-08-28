@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5">
         <meta name="format-detection" content="telephone=no">
         <title>Bits of Good - Year in Review</title>
-        <meta name="description" content="Celebrating Bits of Good's Achievements throughout the 2019-2020 school year.">
+        <meta name="description" content="Celebrating Bits of Good's achievements throughout the 2019-2020 school year.">
         <meta property="og:type" content="website">
         <!-- <meta property="og:url" content="jasonxuyang.com"> -->
         <meta property="og:title" content="Bits of Good - Year in Review">
-        <meta property="og:description" content="Celebrating Bits of Good's Achievements throughout the 2019-2020 school year.">
+        <meta property="og:description" content="Celebrating Bits of Good's achievements throughout the 2019-2020 school year.">
         <!-- <meta property="og:image" content="http://jasonxuyang.com/img/og-image.jpg"> -->
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
@@ -1757,9 +1757,48 @@
                 bottom: -.1vw;
                 left: 0vw;
             }
+
+            #for_mobile {
+                width: 100vw;
+                height: 100vh;
+                background: #2D285C;
+                display: none;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #for_mobile h1 {
+                margin-top: 4vh;
+                font-size: 9vw;
+                color: #FFFFFF;
+                width: 86vw;
+            }
+
+            #for_mobile .mobile_logo {
+                margin-top: 10vh;
+                width: 86vw;
+            }
+
+            @media only screen and (max-width: 768px) {
+                #for_mobile {
+                    display: flex;
+                }
+
+                #main {
+                    display: none;
+                }
+            }
+            
+
         </style>
     </head>
     <body>
+        <div id='for_mobile'>
+            <img src='static/imgs/hero_logo.png' class='mobile_logo'>
+            <h1>This experience is best viewed on desktop! Please come back with a bigger screen (^-^) </h1>
+        </div>
+
         <main id='main'>
             <section id='hero'>
                 <div class='hero_container'>
